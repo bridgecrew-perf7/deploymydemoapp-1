@@ -1,32 +1,18 @@
 
 
 <mat-toolbar color="primary">
-<button  mat-button [matMenuTriggerFor]="aboveMenu">
-  <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-  Above</button>
-<mat-menu #aboveMenu="matMenu" yPosition="above">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
-
-<button mat-button [matMenuTriggerFor]="belowMenu">Below</button>
-<mat-menu #belowMenu="matMenu" yPosition="below">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
-
-<button mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
-<mat-menu #beforeMenu="matMenu" xPosition="before">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+<button  mat-button routerLink="profile">
+  <mat-icon aria-hidden="false" aria-label="Example home icon">
+    home</mat-icon>
+  Profile</button>
 
 
-<button mat-button [matMenuTriggerFor]="afterMenu">After</button>
-<mat-menu #afterMenu="matMenu" xPosition="after">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+<button mat-button routerLink="automation" >Automation</button>
+
+
+<button mat-button routerLink="data-science" >Data Science</button>
+
+
   <span class="example-spacer"></span>
   <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
   <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
