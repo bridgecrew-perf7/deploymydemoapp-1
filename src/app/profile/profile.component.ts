@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
+  longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
+  from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+  originally bred for hunting.`;
+  myimage:string = "assets/image/josimar.jpg"
+  myicon:string = "assets/image/icon.jpg"
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

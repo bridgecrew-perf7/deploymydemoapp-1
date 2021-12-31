@@ -11,6 +11,11 @@ import {MatMenuModule} from '@angular/material/menu';
 import { ProfileComponent } from './profile/profile.component';
 import { DataScienceComponent } from './data-science/data-science.component';
 import { AutomationComponent } from './automation/automation.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { OverlayContainer } from '@angular/cdk/overlay';
+import { ShareddataserviceService } from './shareddataservice.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,11 +31,18 @@ import { AutomationComponent } from './automation/automation.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatGridListModule,
+    MatCardModule,
+    MatSlideToggleModule
 
 
   ],
-  providers: [],
+  providers: [OverlayContainer,ShareddataserviceService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(overlayContainer: OverlayContainer) {
+    overlayContainer.getContainerElement().classList.add('solution-dark-theme');
+  }
+ }

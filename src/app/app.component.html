@@ -14,14 +14,51 @@
 
 
   <span class="example-spacer"></span>
-  <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
-  <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+
+  <a [href]="twitterUrl" target="_blank">
+    <img
+      src="https://cdn4.iconfinder.com/data/icons/miu-hexagon-flat-social/60/twitter-hexagon-social-media-32.png"
+      alt=""
+      matTooltip="Twitter"
+      matTooltipPosition="above"
+    />
+  </a>
+  <a [href]="githubUrl" target="_blank">
+    <img
+      src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_six_color-32.png"
+      alt=""
+      matTooltip="Github"
+      matTooltipPosition="above"
+    />
+  </a>
+
+  <a [href]="facebookUrl" target="_blank">
+    <img
+      src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/Untitled-16-32.png"
+      alt=""
+      matTooltip="Facebook"
+      matTooltipPosition="above"
+    />
+  </a>
+  <a [href]="googleUrl" target="_blank">
+    <img
+      src="https://cdn4.iconfinder.com/data/icons/miu-hexagon-flat-social/60/google_plus-hexagon-social-media-32.png"
+      alt=""
+      matTooltip="Google+"
+      matTooltipPosition="above"
+    />
+  </a>
+  <a [href]="linkedinUrl" target="_blank">
+    <img
+      src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/Untitled-11-32.png"
+      alt=""
+      matTooltip="LinkedIn"
+      matTooltipPosition="above"
+    />
+  </a>
+
 </mat-toolbar>
 
 
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>Custom Toolbar</span>
-  </mat-toolbar-row>
-</mat-toolbar>
+
 <router-outlet></router-outlet>
