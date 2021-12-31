@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'ja-demo';
   myicons:string = "assets/image/linkedin.svg"
    stackoverflowUrl: string = 'https://stackoverflow.com/users/1791913/faisal?tab=profile';
-  linkedinUrl: string = 'https://www.linkedin.com/in/mohammadfaysal/';
+  linkedinUrl: string = 'https://www.linkedin.com/in/josimar-arias549/';
    fiverrUrl:string = 'https://www.fiverr.com/faisalmuhammad_';
    facebookUrl:string = 'https://www.facebook.com/phaysall';
    twitterUrl:string = 'https://twitter.com/faisssallll';

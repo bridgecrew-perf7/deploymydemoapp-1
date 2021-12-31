@@ -14,8 +14,6 @@ import { AutomationComponent } from './automation/automation.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-import { OverlayContainer } from '@angular/cdk/overlay';
-import { ShareddataserviceService } from './shareddataservice.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,11 +36,7 @@ import { ShareddataserviceService } from './shareddataservice.service';
 
 
   ],
-  providers: [OverlayContainer,ShareddataserviceService],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  constructor(overlayContainer: OverlayContainer) {
-    overlayContainer.getContainerElement().classList.add('solution-dark-theme');
-  }
- }
+export class AppModule { }
